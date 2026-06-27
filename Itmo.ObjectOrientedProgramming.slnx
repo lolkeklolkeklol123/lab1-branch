@@ -1,0 +1,24 @@
+﻿<Solution>
+  <Folder Name="/common/">
+    <File Path="Directory.Packages.props" />
+    <File Path="Directory.Build.props" />
+    <File Path=".gitignore" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src\Lab1\Lab1.csproj" Type="Classic C#" />
+    <Project Path="src\Lab2\Lab2.csproj" Type="Classic C#" />
+    <Project Path="src\Lab3\Lab3.csproj" Type="Classic C#" />
+    <Project Path="src\Lab5\Lab5.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/src/lab-4/">
+    <Project Path="src\Lab4.Core\Lab4.Core.csproj" Type="Classic C#" />
+    <Project Path="src\Lab4.Presentation\Lab4.Presentation.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests\Lab1.Tests\Lab1.Tests.csproj" Type="Classic C#" />
+    <Project Path="tests\Lab2.Tests\Lab2.Tests.csproj" Type="Classic C#" />
+    <Project Path="tests\Lab3.Tests\Lab3.Tests.csproj" Type="Classic C#" />
+    <Project Path="tests\Lab4.Tests\Lab4.Tests.csproj" Type="Classic C#" />
+    <Project Path="tests\Lab5.Tests\Lab5.Tests.csproj" Type="Classic C#" />
+  </Folder>
+</Solution>
