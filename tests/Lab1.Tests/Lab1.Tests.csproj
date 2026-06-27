@@ -16,7 +16,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\Lab1\Lab1.csproj" />
+      <ProjectReference Include="..\..\src\Lab1\Itmo.ObjectOrientedProgramming.Lab1.Application\Itmo.ObjectOrientedProgramming.Lab1.Application.csproj" />
+      <ProjectReference Include="..\..\src\Lab1\Itmo.ObjectOrientedProgramming.Lab1.Infrastructure\Itmo.ObjectOrientedProgramming.Lab1.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\src\Lab1\Itmo.ObjectOrientedProgramming.Lab1.Presentation\Itmo.ObjectOrientedProgramming.Lab1.Presentation.csproj" />
     </ItemGroup>
 
 </Project>

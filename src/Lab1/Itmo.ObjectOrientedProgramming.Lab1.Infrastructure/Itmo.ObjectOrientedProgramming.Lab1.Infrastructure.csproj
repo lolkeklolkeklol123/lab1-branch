@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Itmo.ObjectOrientedProgramming.Lab1.Infrastructure</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Itmo.ObjectOrientedProgramming.Lab1.Domain\Itmo.ObjectOrientedProgramming.Lab1.Domain.csproj" />
+    <ProjectReference Include="..\Itmo.ObjectOrientedProgramming.Lab1.Infrastructure.Abstractions\Itmo.ObjectOrientedProgramming.Lab1.Infrastructure.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
+
