@@ -2,9 +2,9 @@ name: dotnet build & test
 
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master"]
   pull_request:
-    branches: [ "master" ]
+    branches: ["master"]
 
 permissions:
   contents: read
@@ -13,8 +13,23 @@ permissions:
 
 jobs:
   run:
-    runs-on: [ self-hosted, ubuntu-latest ]
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
-      - uses: is-oop-y28/actions@master
+
+      - name: Install .NET 9.0 locally
+        run: |
+          curl -sSL https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh
+          chmod +x dotnet-install.sh
+          ./dotnet-install.sh --channel 9.0 --install-dir ./local-dotnet
+          echo "$(pwd)/local-dotnet" >> "$GITHUB_PATH"
+
+      - name: Restore dependencies
+        run: ./local-dotnet/dotnet restore Itmo.ObjectOrientedProgramming.sln
+
+      - name: Build
+        run: ./local-dotnet/dotnet build Itmo.ObjectOrientedProgramming.sln --no-restore --configuration Release
+
+      - name: Test
+        run: ./local-dotnet/dotnet test Itmo.ObjectOrientedProgramming.sln --no-build --configuration Release
