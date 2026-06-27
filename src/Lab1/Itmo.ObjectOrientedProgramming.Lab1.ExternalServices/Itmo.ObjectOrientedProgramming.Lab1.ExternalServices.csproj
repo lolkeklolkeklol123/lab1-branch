@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Itmo.ObjectOrientedProgramming.Lab1.ExternalServices</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Itmo.ObjectOrientedProgramming.Lab1.Domain\Itmo.ObjectOrientedProgramming.Lab1.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
+

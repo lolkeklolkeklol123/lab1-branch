@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Itmo.ObjectOrientedProgramming.Lab1.Presentation</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Itmo.ObjectOrientedProgramming.Lab1.Presentation.Abstractions\Itmo.ObjectOrientedProgramming.Lab1.Presentation.Abstractions.csproj" />
+    <ProjectReference Include="..\Itmo.ObjectOrientedProgramming.Lab1.Application\Itmo.ObjectOrientedProgramming.Lab1.Application.csproj" />
+    <ProjectReference Include="..\Itmo.ObjectOrientedProgramming.Lab1.Domain\Itmo.ObjectOrientedProgramming.Lab1.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
+

@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - Directory.Build.props
-      - .github/**
       - .gitattributes
 
 jobs:
